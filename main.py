@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium_stealth import stealth
 from time import sleep
+import sys
 import os
 from dotenv import load_dotenv
 
@@ -19,9 +20,10 @@ options.add_experimental_option('useAutomationExtension', False)
 
 
 def main():
-    repo_name = input("Enter repository name: ")
+    repo_name = sys.argv[1]
 
     driver = webdriver.Chrome(options=options)
+    driver.maximize_window()
 
     # add stealth driver to not trigger verification
     stealth(driver,
