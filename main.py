@@ -29,7 +29,7 @@ def main():
     stealth(driver,
             languages=["en-US", "en"],
             vendor="duckduckgo.com",
-            platform="Ubuntu64",
+            platform="win64",
             webgl_vendor="Intel Inc.",
             renderer="Intel Iris OpenGL Engine",
             fix_hairline=True,
