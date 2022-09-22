@@ -11,3 +11,6 @@
   <li>Then click 'new' button and enter the repo name the got from the user.</li>
   <li>Then press 'create repo' button and wait for a hour before closing the window.</li>
 </ol>
+
+<h2>Preview</h2>
+<img src="https://user-images.githubusercontent.com/91461938/191668390-4c359b55-01ec-4174-ace4-2a613b9f8c9b.gif">
