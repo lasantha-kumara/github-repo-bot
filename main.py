@@ -17,8 +17,8 @@ def main():
     try:
         repo_name = sys.argv[1]
 
+        # Load undetected chrome
         driver = uc.Chrome()
-        # driver.maximize_window()
 
         # go to github new repo page
         driver.get("https://github.com/new")
