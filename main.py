@@ -1,39 +1,23 @@
-from selenium import webdriver
+import undetected_chromedriver as uc
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
-from selenium_stealth import stealth
 from time import sleep
 import sys
 import os
 from dotenv import load_dotenv
+
 
 # load username and password from env file
 load_dotenv()
 USERNAME = os.getenv("GITHUB_USERNAME")
 PASSWORD = os.getenv("GITHUB_PASSWORD")
 
-options = webdriver.ChromeOptions()
-
-# options.add_argument("--headless")
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_experimental_option('useAutomationExtension', False)
-
 
 def main():
     repo_name = sys.argv[1]
 
-    driver = webdriver.Chrome(options=options)
+    driver = uc.Chrome()
     driver.maximize_window()
-
-    # add stealth driver to not trigger verification
-    stealth(driver,
-            languages=["en-US", "en"],
-            vendor="duckduckgo.com",
-            platform="win64",
-            webgl_vendor="Intel Inc.",
-            renderer="Intel Iris OpenGL Engine",
-            fix_hairline=True,
-            )
 
     # go to github new repo page
     driver.get("https://github.com/new")
@@ -56,7 +40,7 @@ def main():
     create_repo_btn.click()
 
     # wait for an hour before closing the window
-    sleep(600)
+    sleep(20)
 
 
 main()
