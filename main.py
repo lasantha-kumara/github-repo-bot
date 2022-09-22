@@ -14,6 +14,7 @@ PASSWORD = os.getenv("GITHUB_PASSWORD")
 
 
 def main():
+    # If user didn't enter a repo name
     try:
         repo_name = sys.argv[1]
 
