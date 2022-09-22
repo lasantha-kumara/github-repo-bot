@@ -1,8 +1,6 @@
 # Python app built by using selenium to create repos in GitHub
 
-<ul>
-  <li>How this app works</li>
-</ul>
+<h2>How this app works</h2>
 <ol>
   <li>Get username and password from the env file</li>
   <li>Get the repo name from argument variable</li>
