@@ -45,7 +45,7 @@ def main():
         sleep(10)
 
     except IndexError:
-        print("Enter a repo name")
+        print("Repo name not found")
 
 
 main()
