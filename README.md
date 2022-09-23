@@ -11,4 +11,4 @@
 </ol>
 
 <h2>Preview</h2>
-<img src="https://user-images.githubusercontent.com/91461938/191670471-90e9ef8a-e0c2-434d-af81-702d8fa1a54b.gif">
+<img src="https://user-images.githubusercontent.com/91461938/191907239-4950a378-504f-46a1-9d00-ac420b77a197.gif">
