@@ -42,7 +42,7 @@ def main():
         create_repo_btn.click()
 
         # wait for an 20 seconds before closing the window
-        sleep(20)
+        sleep(10)
 
     except IndexError:
         print("Enter a repo name")
