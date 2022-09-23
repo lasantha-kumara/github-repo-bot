@@ -1,4 +1,4 @@
-import undetected_chromedriver as uc
+from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from time import sleep
@@ -18,8 +18,8 @@ def main():
     try:
         repo_name = sys.argv[1]
 
-        # Load undetected chrome
-        driver = uc.Chrome()
+        # Load chrome driver
+        driver = webdriver.Chrome()
 
         # go to github new repo page
         driver.get("https://github.com/new")
@@ -41,7 +41,7 @@ def main():
             By.XPATH, '//*[@id="new_repository"]/div[5]/button')
         create_repo_btn.click()
 
-        # wait for an 20 seconds before closing the window
+        # wait for an 10 seconds before closing the window
         sleep(10)
 
     except IndexError:
