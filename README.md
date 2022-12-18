@@ -1,6 +1,6 @@
 # GitBot
 
-Python automation using selenium to create repos in GitHub
+Automate github repo creation using selenium web driver.
 
 ## Description
 
