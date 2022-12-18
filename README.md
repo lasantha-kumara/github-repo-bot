@@ -1,6 +1,6 @@
 # GitBot
 
-Python automation by using selenium to create repos in GitHub
+Python automation using selenium to create repos in GitHub
 
 ## Description
 
