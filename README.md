@@ -31,6 +31,19 @@ $ cd automate-github-repo-creation/
 
 # To install all dependencies
 $ pip install -r requirements.txt
+
+# To create an env file
+$ touch .env
+
+# To open the env file
+$ open .env
+```
+
+After opening the .env file add below 2 lines to the file and save it.
+
+```
+FACEBOOK_EMAIL="your_facebook_email"
+FACEBOOK_PASSWORD="your_facebook_password"
 ```
 
 ## Usage
