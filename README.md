@@ -9,8 +9,9 @@ Automate github repo creation using [Python](https://www.python.org/) and [Selen
 * [Usage](#usage)
 
 ## General info
-This project is simple Lorem ipsum dolor generator.
-	
+This is an automation project to create new repositories in github. 
+* This will en
+
 ## Technologies
 Project is created with:
 * Python version: 3.10
@@ -37,13 +38,13 @@ $ pip install -r requirements.txt
 To run this project in Linux/Unix:
 
 ```
-$ python3 main.py
+$ python3 main.py repo_name
 ```
 
 To run this project in Windows:
 
 ```
-$ python main.py
+$ python main.py repo_name
 ```
 
 ## License 
