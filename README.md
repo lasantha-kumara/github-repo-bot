@@ -1,6 +1,6 @@
 # GitBot
 
-Automate github repo creation using Python and selenium.
+Automate github repo creation using [Python](https://www.python.org/) and [Selenium](https://www.selenium.dev/).
 
 ## Table of contents
 * [General info](#general-info)
