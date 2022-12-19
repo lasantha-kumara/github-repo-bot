@@ -43,6 +43,7 @@ def main():
 
         # wait for an 10 seconds before closing the window
         sleep(10)
+        print("Repo created.")
 
     except IndexError:
         print("Repo name not found")
