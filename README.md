@@ -9,8 +9,7 @@ Automate github repo creation using [Python](https://www.python.org/) and [Selen
 * [Usage](#usage)
 
 ## General info
-This is an automation project to create new repositories in github. 
-* This will en
+This is a commandline program to create github repositories automatically. This will ease the workload of developers who wants to create lots of repos daily.
 
 ## Technologies
 Project is created with:
@@ -39,11 +38,11 @@ $ touch .env
 $ open .env
 ```
 
-After opening the .env file add below 2 lines to the file and save it.
+Add these 2 lines and save it.
 
 ```
-FACEBOOK_EMAIL="your_facebook_email"
-FACEBOOK_PASSWORD="your_facebook_password"
+GITHUB_USERNAME="your_github_email"
+GITHUB_PASSWORD="your_github_password"
 ```
 
 ## Usage
