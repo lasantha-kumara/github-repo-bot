@@ -19,7 +19,10 @@ def main():
         repo_name = sys.argv[1]
 
         # Load chrome driver
-        driver = webdriver.Chrome()
+        # driver = webdriver.Chrome()
+
+        # Load firefox driver
+        driver = webdriver.Firefox()
 
         # go to github new repo page
         driver.get("https://github.com/new")
