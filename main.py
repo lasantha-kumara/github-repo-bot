@@ -46,6 +46,8 @@ def main():
 
         # wait for an 10 seconds before closing the window
         sleep(10)
+        driver.close()
+
         print("Repository created.")
 
     except IndexError:
