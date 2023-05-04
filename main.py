@@ -40,15 +40,14 @@ def main():
                 By.XPATH, '//*[@id="react-aria-2"]'))
         repo_name_input_box.click()
         repo_name_input_box.send_keys(repo_name)
-        sleep(5)
+        sleep(2.5)
 
         create_repo_btn = driver.find_element(
             By.XPATH, '/html/body/div[1]/div[6]/main/react-app/div/div/form/div[5]/button')
 
         create_repo_btn.click()
 
-        # wait for an 10 seconds before closing the window
-        sleep(10)
+        # close the browser window
         driver.close()
 
         print("Successfully created repository.")
