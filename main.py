@@ -35,11 +35,13 @@ def main():
         # press enter after entering password
         password.send_keys(PASSWORD + Keys.ENTER)
 
+        # wait until it load the page
         repo_name_input_box = WebDriverWait(driver, 60).until(
             lambda x: x.find_element(
                 By.XPATH, '//*[@id="react-aria-2"]'))
         repo_name_input_box.click()
         repo_name_input_box.send_keys(repo_name)
+        # after entering the repo name, wait for it to check availability
         sleep(2.5)
 
         create_repo_btn = driver.find_element(
