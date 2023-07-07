@@ -25,7 +25,7 @@ def main():
         # Load firefox driver
         driver = webdriver.Firefox()
 
-        # go to github new repo page
+        # go to GitHub new repo page
         driver.get("https://github.com/new")
 
         username = driver.find_element(By.NAME, "login")
